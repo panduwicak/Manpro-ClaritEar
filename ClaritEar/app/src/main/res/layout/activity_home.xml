@@ -47,6 +47,7 @@
         android:layout_toRightOf="@id/tv_main_highestscore"
         android:layout_below="@id/btn_main_start"
         android:layout_marginTop="60dp"
+        android:id="@+id/tv_main_highscore"
         android:textSize="30dp"/>
 
 </RelativeLayout>

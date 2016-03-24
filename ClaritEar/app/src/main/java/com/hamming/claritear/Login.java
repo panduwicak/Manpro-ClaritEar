@@ -57,17 +57,14 @@ public class Login extends AppCompatActivity {
                     switch(result2){
                         case "true":
                             //Menyimpan info login berupa username dengan SharedPreferance
-                            /*SharedPreferences sharedPrefLogin = getSharedPreferences("loginInfo", Context
+                            SharedPreferences sharedPrefLogin = getSharedPreferences("loginInfo", Context
                                     .MODE_PRIVATE);
 
                             SharedPreferences.Editor editor = sharedPrefLogin.edit();
-                            editor.putString("email", inputUsername.getText().toString());
-                            editor.apply();*/
+                            editor.putString("username", inputUsername.getText().toString());
+                            editor.apply();
                             Intent login = new Intent(Login.this,HomeActivity.class);
                             startActivity(login);
-                            finish();
-                            Toast.makeText(Login.this,"You are logged in",Toast.LENGTH_LONG)
-                                    .show();
                             break;
 
                         case "false":
