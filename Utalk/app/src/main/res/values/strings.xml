@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Ütalk</string>
+    <string name="action_settings">Settings</string>
+    <string name="step">Select situation you are in</string>
+    <string name="GENERATE">GENERATE</string>
+    <string name="sample_question">sample question</string>
+    <string name="with_whom">With whom you talk to</string>
+    <string name="what_situation">What situation you are in</string>
+    <string-array name="situation">
+        <item>(Choose a situation)</item>
+        <item>Your first date</item>
+        <item>Approaching a girl</item>
+        <item>Meeting your girlfriend\'s parents</item>
+        <item>Bump with your ex</item>
+        <item>Toilet chat</item>
+        <item>Old friend reunion</item>
+        <item>Family gathering</item>
+        <item>Riding a Gojek</item>
+        <item>Meeting the forgotten old friend</item>
+    </string-array>
+    <string-array name="firstdate">
+        <item>What sort of vacations do you like to take?</item>
+        <item>How was your date ?</item>
+        <item>Tell me about your frieds?</item>
+        <item>Are you a dog person, a cat person, or neither?</item>
+        <item>What do you like to do in free time?</item>
+        <item>Is there anything you\'re really passionate about?</item>
+        <item>Do you like your job?</item>
+        <item>Are you a morning or a night person?</item>
+        <item>Would you like a bite of my dish?</item>
+        <item>Is it too noisy in here for you?</item>
+        <item>Who do you live with?</item>
+        <item>Are you close to your family?</item>
+        <item>Tell me who\'s in your family?</item>
+        <item>Is there anything you don\'t eat? </item>
+        <item>Do you collect anything ?</item>
+        <item>How do you feel about.. [thing you\'re really passionate about]?</item>
+        <item>Have you seen any good movies or TV shows lately?</item>
+        <item>Have you been to any good restaurants recently?</item>
+        <item>Are you dating anyone else at the moment?</item>
+    </string-array>
+    <string-array name="approachgirl">
+        <item>How are you doing today?</item>
+        <item>How was your day today?</item>
+        <item>Did you do anything fun?</item>
+        <item>Beautiful day out today, isn\'t it?</item>
+        <item>Do you watch [Film]? Who is your favorite character?</item>
+        <item>Have you heard [Musician\'s] new album? What did you think?</item>
+        <item>Have you seen the latest [Film]? I heard it\'s fantastic!</item>
+        <item>I\'m dreading the math final next week. I suck at algebra! How are you feeling about it?</item>
+        <item>I\'ve heard you\'re good friends with [Your friend]. How do you two know each other?</item>
+        <item>Oh so you know [Your friend]? We go way back! He\'s hilarious, isn\'t he?</item>
+        <item>What are the top five places you want to visit before you die?</item>
+        <item>If you could be an animal, what type of animal would you be?</item>
+    </string-array>
+    <string-array name="parent">
+        <item>Hello Mr. or Mrs. ! Nice to meet you</item>
+        <item>Thank you for your kindness ma\'am or sir</item>
+        <item>You look great today, Ma\'am or Sir</item>
+        <item>Is there anything [your partner] doesn\'t like?</item>
+    </string-array>
+    <string-array name="ex">
+        <item>Hi, how are you?</item>
+        <item>How are your parents?</item>
+        <item>Do you still live there?</item>
+        <item>How\'s [her dog\'s name]?</item>
+        <item>Are you still going to [place you used to go to with her]?</item>
+        <item>You are still beautiful</item>
+        <item>How is your life going?</item>
+        <item>Say my hello to your mom please</item>
+    </string-array>
+    <string-array name="toilet">
+        <item>Sorry, do you have any tissue?</item>
+        <item>Hmm, smells good</item>
+        <item>Nice fart, man</item>
+        <item>Let\'s find out who have the loudest fart</item>
+        <item>How long have you been there?</item>
+        <item>Sorry, when are you going to finish? I can\'t hold it any longer</item>
+        <item>OH NO! Someone didn\'t flush?</item>
+    </string-array>
+    <string-array name="oldfriendreunion">
+        <item>Hey, how are you?</item>
+        <item>What are you doing these days?</item>
+        <item>What are the best things you did after graduation?</item>
+        <item>How is your family?</item>
+        <item>Do you remember that awesome teacher? How is she now?</item>
+        <item>remember the song we always listened to together?</item>
+        <item>Have you heard anything about [friend who\'s long gone]?</item>
+        <item>Remember when you [your friend\'s embarrassing moment]?</item>
+        <item>Wow! you look different</item>
+        <item>Dou you have children?</item>
+        <item>What happened to your hair?</item>
+        <item>LOL! You gained weight</item>
+        <item>Do you remember the smartest child in our class?</item>
+        <item>How is your study now?</item>
+        <item>Are you still doing your hobby?</item>
+        <item>Are you married?</item>
+        <item>How are your plans next 5 years?</item>
+        <item>Remember that hot girl we always talked about?</item>
+        <item>Have yo gone to any places outside the country?</item>
+        <item>How about your crush back then? Are you still in contact with her?</item>
+    </string-array>
+    <string-array name="gojek">
+        <item>Sorry for waiting too long</item>
+        <item>Which way is the best way?</item>
+        <item>How is the traffic today?</item>
+        <item>Where do you live, Sir?</item>
+        <item>So gojek is your only job?</item>
+        <item>How is the weather throughout the day?</item>
+        <item>Sir, do you know why is it so hard to order Gojek lately?</item>
+        <item>Do you have a family?</item>
+        <item>Look! the sky is beautiful</item>
+        <item>There are many Gojek drivers who have cool bike</item>
+        <item>What do you think about the relationship between Gojek and conventional ojek now?</item>
+        <item>How long have you been a driver?</item>
+        <item>Does this job really give you huge profit?</item>
+    </string-array>
+    <string-array name="forgottenfriend">
+        <item>Oh, Hai! (be excited)</item>
+        <item>Long time no see!</item>
+        <item>How about your best friend back then?</item>
+        <item>Oh, let me give you my business card! (hoping they give you theirs)</item>
+        <item>Where do you live now?</item>
+        <item>I can\'t remember when we last met, it feels like a long tome ago</item>
+    </string-array>
+
+</resources>
