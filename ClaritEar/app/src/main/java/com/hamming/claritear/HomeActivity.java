@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,6 +17,9 @@ import com.kosalgeek.genasync12.PostResponseAsyncTask;
 
 import java.util.HashMap;
 
+/**
+ * Kelas HomeActivity
+ */
 public class HomeActivity extends AppCompatActivity {
     TextView detailusername, detailhighscore;
     Button start;
@@ -50,6 +54,18 @@ public class HomeActivity extends AppCompatActivity {
         fetchHighScore.execute(urlhighscore);
     }
 
+    /**
+     * method startPlaying untuk mulai bermain jika tombol "start" ditekan
+     */
+    public void startPlaying(View v){
+        Intent startPlay = new Intent(HomeActivity.this, PlayingActivity.class);
+        startActivity(startPlay);
+        finish();
+    }
+
+    /**
+     * method override onBackPressed untuk keluar saat tombol back pada hardware ditekan
+     */
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -89,6 +105,9 @@ public class HomeActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * method appExit yang akan dipanggil saat ingin keluar dari app
+     */
     public void appExit(){
         this.finish();
         Intent exit = new Intent(Intent.ACTION_MAIN);
