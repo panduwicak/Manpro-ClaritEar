@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hamming.claritear.HighscoreActivity"
+    android:background="@drawable/crowdd2blur">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffff1a"
+        android:text="Well Done!"
+        android:textSize="40dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_welldone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_welldone"
+        android:layout_marginTop="50dp"
+        android:text="You've reached new highscore"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_youvereached"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_youvereached"
+        android:layout_marginTop="50dp"
+        android:textSize="60dp"
+        android:text=""
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#ffff1a"
+        android:id="@+id/tv_newhighscore"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tv_newhighscore"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Share result?"
+        android:id="@+id/tv_sharethis"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sharethis"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:text="Yes"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="clickShare"
+        android:id="@+id/btn_share"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sharethis"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:text="No, Thanks"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_noshare"
+        android:onClick="clickNoShare" />
+
+</RelativeLayout>

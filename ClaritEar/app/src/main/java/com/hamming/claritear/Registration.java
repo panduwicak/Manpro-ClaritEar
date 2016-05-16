@@ -22,6 +22,14 @@ public class Registration extends AppCompatActivity {
     EditText username, email, password, rptpassword;
     Button register;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent toLogin = new Intent(Registration.this,Login.class);
+        startActivity(toLogin);
+        finish();
+    }
+
     /**
      * Method onCreate untuk mendeklarasi fungsi button dan editText di activity_registration.xml
      * @param savedInstanceState
@@ -85,16 +93,6 @@ public class Registration extends AppCompatActivity {
             });
             registerTask.execute(urlRegister);
         }
-    }
-
-    /**
-     * Method toLogin untuk pindah ke activity Login saat EditText "Back to login" ditekan
-     * @param v
-     */
-    public void toLogin(View v){
-        Intent toLogin = new Intent(Registration.this,Login.class);
-        startActivity(toLogin);
-        finish();
     }
 
     /**
