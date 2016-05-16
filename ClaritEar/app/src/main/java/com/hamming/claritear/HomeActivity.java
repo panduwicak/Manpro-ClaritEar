@@ -3,8 +3,9 @@ package com.hamming.claritear;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,9 +22,14 @@ import java.util.HashMap;
  * Kelas HomeActivity
  */
 public class HomeActivity extends AppCompatActivity {
-    TextView detailusername, detailhighscore;
+    public static TextView detailusername, detailhighscore;
     Button start;
 
+    /**
+     * method override untuk mendeclare komponen pada xml ke java.
+     * Juga dibutuhkan untuk menampilkan hal-hal yang perlu ditempilkan seperti informasi user dll
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //Mengambil data highscore dari database
         String urlhighscore = "http://teamhamming.esy.es/FetchHighscore.php";
-        PostResponseAsyncTask fetchHighScore = new PostResponseAsyncTask(this, postShared, false, new AsyncResponse() {
+        PostResponseAsyncTask fetchHighScore = new PostResponseAsyncTask(this, postShared, new AsyncResponse() {
             @Override
             public void processFinish(String result3) {
                 detailhighscore.setText(result3);
@@ -58,7 +64,7 @@ public class HomeActivity extends AppCompatActivity {
      * method startPlaying untuk mulai bermain jika tombol "start" ditekan
      */
     public void startPlaying(View v){
-        Intent startPlay = new Intent(HomeActivity.this, PlayingActivity.class);
+        Intent startPlay = new Intent(HomeActivity.this, ChooseInstrument.class);
         startActivity(startPlay);
         finish();
     }
@@ -72,6 +78,11 @@ public class HomeActivity extends AppCompatActivity {
         appExit();
     }
 
+    /**
+     * method yang akan menampilkan menu dropdown pada pojok kanan atas layar
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuinflater = getMenuInflater();
@@ -79,9 +90,33 @@ public class HomeActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * method yang digunakan untuk menentukan apa yang dilakukan pada setiap opsi yang tertera
+     * pada menu dropdown
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case (R.id.share):
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "I am now using ClaritEar to train my ear and musical ability\n\n" +
+                        "Go get and download ClaritEar for free here www.teamhamming.esy.es");
+                shareIntent.setType("text/plain");
+                shareIntent.createChooser(shareIntent, "Share via");
+                startActivity(shareIntent);
+                break;
+            case (R.id.leaderboard):
+                Intent leaderIntent = new Intent(HomeActivity.this, LeaderActivity.class);
+                startActivity(leaderIntent);
+                break;
+            case(R.id.about):
+                Uri uriUrl = Uri.parse("http://www.teamhamming.esy.es");
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
+                break;
             case(R.id.logout):
                 SharedPreferences sharedPrefLogin = getSharedPreferences("loginInfo", Context
                         .MODE_PRIVATE);
@@ -91,7 +126,7 @@ public class HomeActivity extends AppCompatActivity {
                 editor.apply();
 
                 //Kembali ke halaman Login
-                Intent logout = new Intent(this, Login.class);
+                Intent logout = new Intent(HomeActivity.this, Login.class);
                 startActivity(logout);
                 finish();
                 break;

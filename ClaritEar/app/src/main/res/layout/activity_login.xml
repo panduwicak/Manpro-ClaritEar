@@ -5,46 +5,92 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.hamming.claritear.Login">
+    tools:context="com.hamming.claritear.Login"
+    android:background="@drawable/violin1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_login_claritear"
+        android:text="ClaritEar"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_login_logo"
+        android:layout_below="@id/tv_login_claritear"
+        android:src="@drawable/claritear"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_login_logo"
+        android:text="www.teamhamming.esy.es"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:linksClickable="true"
+        android:autoLink="web"/>
     
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#cc000000"
+        android:textColorHighlight="#000000"
+        android:layout_above="@+id/et_login_password"
+        android:layout_marginBottom="20dp"
         android:id="@+id/et_login_username"
         android:inputType="text"
-        android:hint="Username"/>
+        android:padding="8dp"
+        android:background="@drawable/edittext"
+        android:hint="username"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_login_username"
-        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_login_login"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#cc000000"
+        android:textColorHighlight="#000000"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="password"
+        android:padding="8dp"
+        android:background="@drawable/edittext"
         android:id="@+id/et_login_password"/>
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="100dp"
         android:text="Login"
         android:textAllCaps="false"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_login_password"
-        android:layout_marginTop="20dp"
+        android:layout_above="@+id/tv_login_toRegister"
+        android:layout_marginBottom="10dp"
         android:id="@+id/btn_login_login"
         android:onClick="login"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_login_login"
+        android:layout_alignParentBottom="true"
         android:text="Make new account"
+        android:textColor="#ffffff"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:id="@+id/tv_login_toRegister"
         android:onClick="toRegister"/>
-
-
 
 </RelativeLayout>
