@@ -1,0 +1,110 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:2:1-67:12
+	xmlns:android
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:7:5-65:19
+MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:10:9-41
+	android:allowBackup
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:9:9-38
+	android:theme
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:12:9-40
+activity#com.socializer.utalk.MainActivity
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:13:9-22:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:14:13-49
+	android:label
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:16:13-45
+	android:theme
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:17:13-56
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:15:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.default
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.default
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:20:17-75
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:20:27-73
+activity#com.socializer.utalk.Splash
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:24:9-32:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:24:19-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:27:13-30:29
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:29:27-74
+activity#com.socializer.utalk.SendEmail
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:34:9-40:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:34:19-44
+activity#com.socializer.utalk.AboutUs
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:42:9-48:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:43:13-49
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:42:19-42
+activity#com.socializer.utalk.Help
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:50:9-56:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:51:13-49
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:50:19-39
+activity#com.socializer.utalk.WhatThisMain
+ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:58:9-64:20
+	android:screenOrientation
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:59:13-49
+	android:name
+		ADDED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml:58:19-47
+uses-sdk
+INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\wicakcak\AndroidStudioProjects\Utalk\app\src\main\AndroidManifest.xml
